@@ -119,12 +119,11 @@
                     Mind = (Mind + 1)
                     Console.ReadKey()
                 ElseIf Luck + Mind = 13 Then
-                    Console.WriteLine("You gain 1 Luck, 1 Mind and 1 Finesse")
-                    Luck = (Luck + 1)
+                    Console.WriteLine("You lose 1 Luck, but gain 1 Mind and 1 Finesse")
+                    Luck = (Luck - 1)
                     Finesse = (Finesse + 1)
                     Mind = (Mind + 1)
                     Console.ReadKey()
-
                 End If
         End Select
     End Sub
