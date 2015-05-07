@@ -1,0 +1,132 @@
+﻿Module Module1
+    Dim Strength As Integer
+    Dim Finesse As Integer
+    Dim Mind As Integer
+    Dim Luck As Integer
+    Dim Magic As Integer
+    Dim Charm As Integer
+    Dim Choice As String
+    Sub Main()
+        Console.ForegroundColor = ConsoleColor.DarkGreen
+        Luck = 5
+        Charm = 5
+        Magic = 5
+        Mind = 5
+        Finesse = 5
+        Strength = 5
+        Console.WriteLine("It happens in 7 days. Nobody expects it, but that won't stop it.")
+        Console.ReadKey()
+        Console.Clear()
+        Console.WriteLine("Strength = " & Strength)
+        Threading.Thread.Sleep(100)
+        Console.WriteLine("Finesse = " & Finesse)
+        Threading.Thread.Sleep(100)
+        Console.WriteLine("Mind = " & Mind)
+        Threading.Thread.Sleep(100)
+        Console.WriteLine("Luck = " & Luck)
+        Threading.Thread.Sleep(100)
+        Console.WriteLine("Magic = " & Magic)
+        Threading.Thread.Sleep(100)
+        Console.WriteLine("Charm = " & Charm)
+        Console.ReadKey()
+        Console.Clear()
+        Console.WriteLine("Where do you vist?")
+        Threading.Thread.Sleep(100)
+        Console.WriteLine("Mage Tower")
+        Threading.Thread.Sleep(100)
+        Console.WriteLine("Palace")
+        Threading.Thread.Sleep(100)
+        Console.WriteLine("Tavern")
+        Threading.Thread.Sleep(100)
+        Console.WriteLine("Royal Garden")
+        Threading.Thread.Sleep(100)
+        Console.WriteLine("Zen Garden")
+        Threading.Thread.Sleep(100)
+        Console.WriteLine("Areana")
+        Threading.Thread.Sleep(100)
+        Console.WriteLine("Betting")
+        Threading.Thread.Sleep(100)
+        Console.WriteLine("Salon")
+        Choice = ("")
+        Choice = Console.ReadLine
+        Select Case Choice
+            Case ("Mage Tower")
+                Console.Clear()
+                Console.WriteLine("You spend the day experimenting with different brews.")
+                Console.ReadKey()
+                Console.Clear()
+                Console.WriteLine("You gain 2 Magic and 1 Mind")
+                Magic = (Magic + 2)
+                Mind = (Mind + 1)
+                Console.ReadKey()
+            Case ("Palace")
+                Console.Clear()
+                Console.WriteLine("You spend the day visiting high class social gatherings.")
+                Console.ReadKey()
+                Console.Clear()
+                Console.WriteLine("You gain 2 Finesse and 1 Charm")
+                Finesse = (Finesse + 2)
+                Charm = (Charm + 1)
+                Console.ReadKey()
+            Case ("Tavern")
+                Console.Clear()
+                Console.WriteLine("You spend the day getting wasted.")
+                Console.ReadKey()
+                Console.Clear()
+                Console.WriteLine("You gain 1 Strength, 1 Finesse and 1 Charm")
+                Finesse = (Finesse + 1)
+                Charm = (Charm + 1)
+                Strength = (Strength + 1)
+                Console.ReadKey()
+            Case ("Royal Garden")
+                Console.Clear()
+                Console.WriteLine("You spend the day keeping the Royal Gardens.")
+                Console.ReadKey()
+                Console.Clear()
+                Console.WriteLine("You gain 1 Mind, 1 Finesse and 1 Charm")
+                Finesse = (Finesse + 1)
+                Charm = (Charm + 1)
+                Mind = (Mind + 1)
+                Console.ReadKey()
+            Case ("Zen Garden")
+                Console.Clear()
+                Console.WriteLine("You spend the day meditating in the Zen Gardens.")
+                Console.ReadKey()
+                Console.Clear()
+                Console.WriteLine("You gain 1 Mind, 1 Magic and 1 Charm")
+                Magic = (Magic + 1)
+                Charm = (Charm + 1)
+                Mind = (Mind + 1)
+                Console.ReadKey()
+            Case ("Arena")
+                Console.Clear()
+                Console.WriteLine("You spend the day fighting and training in the arena.")
+                Console.ReadKey()
+                Console.Clear()
+                Console.WriteLine("You gain 2 Strength and 1 Finesse")
+                Strength = (Strength + 2)
+                Finesse = (Finesse + 1)
+                Console.ReadKey()
+            Case ("Betting")
+                Console.Clear()
+                Console.WriteLine("You spend the day betting on fights and races.")
+                Console.ReadKey()
+                Console.Clear()
+                If Luck + Mind = 12 Then
+                    Console.WriteLine("You gain 1 Luck, 1 Mind and 1 Finesse")
+                    Luck = (Luck + 1)
+                    Finesse = (Finesse + 1)
+                    Mind = (Mind + 1)
+                    Console.ReadKey()
+                ElseIf Luck + Mind = 13 Then
+                    Console.WriteLine("You gain 1 Luck, 1 Mind and 1 Finesse")
+                    Luck = (Luck + 1)
+                    Finesse = (Finesse + 1)
+                    Mind = (Mind + 1)
+                    Console.ReadKey()
+
+                End If
+        End Select
+    End Sub
+
+End Module

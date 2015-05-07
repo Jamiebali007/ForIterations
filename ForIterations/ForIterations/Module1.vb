@@ -1,7 +1,7 @@
 ﻿Module Module1
     Dim Index As Integer
     Sub Main()
-        For Index = 1 To 20
+        For Index = 1 To 40
             If Index = 17 Then
                 Console.WriteLine("Found Seventeen")
             End If
